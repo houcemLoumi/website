@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body {/*Cela s'applique à l'élément <html> (le conteneur principal de la page) 
+    et à l'élément <body> (le contenu principal de la page).*/
+    
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    height: 100%;/*La page (les éléments <html> et <body>) occupe toute
+     la hauteur de l'écran. Cela garantit qu'il y a toujours assez 
+     d'espace pour placer les éléments correctement, même si le contenu est court.*/
+    display: flex;/*Active une méthode spéciale appelée Flexbox pour organiser 
+    les éléments de la page. Flexbox est comme un "organisateur automatique".*/
+    flex-direction: column;/*Dit à Flexbox d'empiler les éléments en colonne 
+    (un au-dessus de l'autre). Cela permet d'avoir :
+    Le contenu en haut.
+    Le footer en bas.*/
+}
+main {
+    flex: 1; /* Permet à la section principale d'occuper tout l'espace disponible */
+   
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 1rem;/*1rem = 16px par défaut car font-size: 16px; dans le style du
+     balise html.*/
+    text-align: center;
+}
+
+nav ul {
+    display: flex; /*Cela transforme la liste en un conteneur flexbox, 
+     ce qui permet d'aligner les éléments facilement sur une ligne ou une colonne.*/
+     justify-content: center;/*    justify-content: center;*/
+}
+
+nav ul li {
+    margin: 10px 10px;/*Le premier 10px : Définit une marge verticale (en haut et en bas de 
+    chaque élément <li>).
+    Le deuxième 10px : Définit une marge horizontale (à gauche et à droite de chaque 
+    élément <li>).*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1rem 0;/*1rem:haut et bas ; 0:gauche et droite*/
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Styles pour la section Éducation */
+#education {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.education-item {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.diplome {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item img {
+    margin-right: 1rem;
+    width: 60px;
+    height: 60px;
+}
+.diplome img {
+    margin-right: 1rem;
+    width: 400px;
+    height: 300px;
+}
+.education-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #444;
+}
+.diplome h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.education-item p {
+    margin: 0.3rem 0;
+    color: #666;
+}
+.diplome p {
+    margin: 0.3rem 0;
+    color: #666;
+}
+
+
+/* Style général pour la liste des compétences */
+ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding-left: 0; /* Supprimer l'indentation à gauche */
+    margin: 0; /* Supprimer la marge */
+}
+
+.center-image {
+    text-align: center;
+    margin-top: 40px; /* Espace après le paragraphe */
+    margin-bottom: 40px;
+}
+
+
+.passions h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.passion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.passion-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.passion-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.mainDeclage{
+    width: 100%;
+    max-width: 600px; /* Largeur maximale du formulaire */
+    padding: 2rem;
+    
+}
